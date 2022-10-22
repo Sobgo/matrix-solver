@@ -26,7 +26,7 @@ int main () {
     if (method == 0) {
         /**
          * Expected input:
-         * Matrix size - two numbers n and m (horizontal then vertical size)
+         * Matrix size - two numbers n and m (horizontal and then vertical size)
          * followed by n rows of m digits - coefficients
          * Example:
          * for:
@@ -41,7 +41,10 @@ int main () {
          * 1 2 -1 0
          * 0 3 3 1
         **/
-        int n, m; std::cin >> n >> m;
+        int n, m; 
+        std::cout << "Enter horizontal and vertical size of matrix: "; 
+        std::cin >> n >> m;
+        std::cout << "Enter matrix:\n";
         Matrix matrix(n,m);
         std::cout << "\nInput:\n"; matrix.print(); 
         matrix.solve(true);
