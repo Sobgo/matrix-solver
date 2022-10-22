@@ -251,7 +251,7 @@ void Matrix::printEquations() {
                 }
             }
             else {
-                if (prev != i - 1) {
+                if (!first) {
                     if (matrix[j][i].numerator > 0) {
                         std::cout << "+ ";
                         if (!(matrix[j][i] == Fraction(1, 1))) {
@@ -265,6 +265,7 @@ void Matrix::printEquations() {
                         } 
                     }
                     std::cout << names[i];
+                    first = false;
                 }
                 else {
                     std::cout << matrix[j][i] << names[i];
