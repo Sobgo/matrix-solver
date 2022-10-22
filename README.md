@@ -11,4 +11,5 @@ You can compile it for example with g++ using:
 `g++ *.cpp -o solver` for Linux  
 `g++ *.cpp -o solver.exe` for Windows
 
-![example](https://user-images.githubusercontent.com/60814050/197349568-38da2126-69ad-4007-87cf-5eebf989f1c7.png)
+![example2](https://user-images.githubusercontent.com/60814050/197355267-f923f3a1-df24-49da-9a3c-dbacb063a499.png)
+
